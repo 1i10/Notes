@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/Images/Icons">
+        <file>Images/Icons/delete.png</file>
+        <file>Images/Icons/add.png</file>
+    </qresource>
+    <qresource prefix="/Images">
+        <file>Images/background board.jpg</file>
+    </qresource>
+</RCC>
