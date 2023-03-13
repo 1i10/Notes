@@ -25,7 +25,7 @@ public:
 private slots:
     void onAddButtonClicked();
     void onSaveButtonClicked();
-    void onListOfNotesItemClicked(QListWidgetItem *item);
+    void on_listOfNotes_itemClicked(QListWidgetItem *item);
     void deleteNoteInList(QListWidgetItem *item);
 
 private:

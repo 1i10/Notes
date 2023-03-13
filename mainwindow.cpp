@@ -148,7 +148,7 @@ void MainWindow::onSaveButtonClicked()
 }
 
 
-void MainWindow::onListOfNotesItemClicked(QListWidgetItem *item)
+void MainWindow::on_listOfNotes_itemClicked(QListWidgetItem *item)
 {
     ui->statusbar->showMessage("");
 
@@ -192,15 +192,14 @@ void MainWindow::deleteNoteInList(QListWidgetItem *item)
         {
             if(row - 1 >= 0)
             {
-                onListOfNotesItemClicked(ui->listOfNotes->item(row-1));
+                on_listOfNotes_itemClicked(ui->listOfNotes->item(row-1));
             }
             else
             {
-                onListOfNotesItemClicked(ui->listOfNotes->item(0));
+                on_listOfNotes_itemClicked(ui->listOfNotes->item(0));
             }
         }
     }
 
     ui->statusbar->showMessage("Заметка удалена!");
 }
-
